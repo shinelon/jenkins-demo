@@ -19,6 +19,12 @@ public class IndexController {
     @RequestMapping("/")
     public String index() {
         logger.info("jenkinsDemo is startup");
-        return "jenkinsDemo is startup";
+        return "jenkinsDemo is startup version:1.0.0";
+    }
+
+    @RequestMapping("/alert")
+    public String alert() {
+        logger.info("jenkinsDemo receive alert");
+        return "jenkinsDemo receive alert";
     }
 }
